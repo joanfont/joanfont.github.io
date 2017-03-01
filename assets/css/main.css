@@ -1148,7 +1148,7 @@
 				width: 100%;
 				min-width: 1000px;
 				min-height: 100%;
-				overflow-y: scroll;
+				overflow-y: hidden;
 				background-attachment: fixed;
 				font-size: 14pt;
 				line-height: 1.75em;
