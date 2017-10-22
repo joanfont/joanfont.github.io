@@ -1,61 +1,58 @@
 <!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Joan Font</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>
+	<body class="is-loading">
 
-		<!-- Wrapper-->
+		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Nav -->
-					<nav id="nav">
-
-						<a href="https://www.twitter.com/joanfont" class="icon fa-twitter"><span>Twitter</span></a>
-						<a href="https://www.github.com/joanfont" class="icon fa-github"><span>GitHub</span></a>
-						<a href="https://www.linkedin.com/in/joanfoont" class="icon fa-linkedin"><span>LinkedIn</span></a>
-					</nav>
-
 				<!-- Main -->
-					<div id="main">
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/joan.jpg" alt="" /></span>
+							<h1>Joan Font</h1>
+							<p>DevOps @ Habitissimo</p>
+						</header>
 
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>Joan Font</h1>
-									<p>Developer</p>
-								</header>
-
-								<div class="jumplink pic">
-									<img src="images/me.jpg" />
-								</div>
-
-							</article>
-
-					</div>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://www.twitter.com/joanfont" class="fa-twitter">Twitter</a></li>
+								<li><a href="https://www.github.com/joanfont" class="fa-github">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
 
 				<!-- Footer -->
-					<div id="footer">
+					<footer id="footer">
 						<ul class="copyright">
 							<li>&copy; Joan Font</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</div>
+					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
 	</body>
 </html>
